@@ -67,24 +67,83 @@
     <py-script src="Patcher/lib/ATPatchmaker.py"></py-script>
     <py-script src="Patcher/Patch/Gamefiles/csv_client/credits.csv"></py-script>
     <py-script src="Patcher/Patch/Gamefiles/csv_client/fingerprint.json"></py-script>
-    <py-script src="Patcher/Patch/Patches/6a18"></py-script>
-    <py-script src="Patcher/Patch/Patches/"></py-script>
-    <py-script src=""></py-script>
-    <py-script src=""></py-script>
-    <py-script src=""></py-script>
-    <py-script src=""></py-script>
+    <py-script src="Patcher/Patch/Patchs/6a1871422ccb1b2f029f15941324196d41aeb14e/fingerprint.json"></py-script>
+    <py-script src="Patcher/Patch/Patchs/6a1871422ccb1b2f029f15941324196d41aeb14e/csv_client/credits.csv"></py-script>
     <py-script src="Patcher/Patch/LZMA.py"></py-script>
     <py-script src="Patcher/Patch/Patch.py"></py-script>
     <!--Protocol-->
-    <py-script src=""></py-script>
-    <py-script src=""></py-script>
+    <py-script src="Protocol/Commands/Client/LogicGatchaCommand.py"></py-script>
+    <py-script src="Protocol/Commands/Client/LogicLevelUpCommand.py"></py-script>
+    <py-script src="Protocol/Commands/Client/LogicPurchaseBrawlPassCommand.py"></py-script>
+    <py-script src="Protocol/Commands/Client/LogicPurchaseDoubleCoinsCommand.py"></py-script>
+    <py-script src="Protocol/Commands/Client/LogicPurchaseHeroLvlUpMaterialCommand.py"></py-script>
+    <py-script src="Protocol/Commands/Client/LogicPurchaseOfferCommand.py"></py-script>
+    <py-script src="Protocol/Commands/Client/LogicSelectSkinCommand.py"></py-script>
+    <py-script src="Protocol/Commands/Client/LogicSetPlayerNameColorCommand.py"></py-script>
+    <py-script src="Protocol/Commands/Client/LogicSetPlayerThumbnailCommand.py"></py-script>
+    <py-script src="Protocol/Commands/Client/LogicChangeAvatarNameCommand.py"></py-script>
+    <py-script src="Protocol/Commands/Client/LogicGiveDeliveryItemsCommand.py"></py-script>
+    <py-script src="Protocol/Commands/Client/LogicSetSupportedCreatorCommand.py"></py-script>
+    <py-script src="Protocol/Messages/Client/AskForAllianceDataMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/AskForBattleEndMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/AskForJoinableAlliancesListMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/AvatarNameCheckRequestMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/ChangeAllianceSettingsMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/ChatToAllianceStreamMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/CreateAllianceMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/EndClientTurnMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/GetLeaderboardMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/GetPlayerProfileMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/GoHomeFromOfflinePractiseMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/JoinAllianceMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/KeepAliveMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/LeaveAllianceMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/LoginMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/PlayerStatusMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/SearchAlliacesMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/SetNameMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/SetSupportedCreatorMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/StartGameMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/TeamChangeMemberSettingsMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/TeamCreateMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/TeamLeaveMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/TeamSetLocationMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Client/TeamToggleSettingsMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/AllianceDataMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/AllianceListMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/AllianceResponseMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/AllianceStreamMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/AllianceWarMessage.py"></py-script> <!--???-->
+    <py-script src="Protocol/Messages/Server/AvailableServerCommandMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/AvatarNameChangeFailedMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/AvatarNameCheckResponseMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/BattleEndMessage.py"></py-script> <!--???-->
+    <py-script src="Protocol/Messages/Server/JoinableAllianceListMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/KeepAliveOkMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/LeaderBoardMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/LobbyInfoMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/LoginFailedMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/LoginOkMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/MatchMakingCancelledMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/MyAllianceMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/OwnHomeDataMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/PlayerProfileMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/SetSupportedCreatorResponseMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/TeamLeftMessage.py"></py-script>
+    <py-script src="Protocol/Messages/Server/TeamMessage.py"></py-script>
+    <py-script src="Protocol/LogicCommandManager.py"></py-script>
+    <py-script src="Protocol/LogicLaserMessageFactory.py"></py-script>
     <!--Utils-->
     <py-script src=""></py-script>
     <py-script src=""></py-script>
     <!--Main py-->
     <py-script src="Main.py"></py-script>
     <!--Json-->
-    
+    <script src="/"></script>
+    <script src="/"></script>
+    <script src="/"></script>
+    <script src="/"></script>
+    <script src="/"></script>
 </head>
 
   <body>
