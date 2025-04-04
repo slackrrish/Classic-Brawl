@@ -3,6 +3,9 @@
   <head>
    <meta charset="UTF-8">
     <title>Classic Brawl by PheonixFire:html by slackrrish</title>
+    <!--Tab icon-->
+    <link rel="icon" href="brawl-images/brawl.ico" />
+      <!--Load Resources, This Is the stuff that runs on The Background.-->
     <!--Core-->
     <py-script src="Core/Networking/ClientThread.py"></py-script>
     <py-script src="Core/Networking/Server.py"></py-script>
@@ -134,18 +137,17 @@
     <py-script src="Protocol/LogicCommandManager.py"></py-script>
     <py-script src="Protocol/LogicLaserMessageFactory.py"></py-script>
     <!--Utils-->
-    <py-script src=""></py-script>
-    <py-script src=""></py-script>
+    <py-script src="Utils/Fingerprint.py"></py-script>
+    <py-script src="Utils/Helpers.py"></py-script>
+    <py-script src="Utils/Updater.py"></py-script>
     <!--Main py-->
     <py-script src="Main.py"></py-script>
     <!--Json-->
-    <script src="/"></script>
-    <script src="/"></script>
-    <script src="/"></script>
-    <script src="/"></script>
-    <script src="/"></script>
+    <script src="/config.json"></script>
+    <script src="/events.json"></script>
+    <script src="/shop.json"></script>
 </head>
-
+  <!--After Loading Resources, This Is the stuff that shows up on The screen.-->
   <body>
     <h6>Loading Resources. . .</h6>
   </body>
